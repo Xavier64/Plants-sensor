@@ -9,8 +9,6 @@ import { AlertComponent } from './alert/alert.component';
 import { HistoricComponent } from './historic/historic.component';
 import { ButtonComponent } from './template/ui/button/button.component';
 import { DropdownComponent } from './template/ui/dropdown/dropdown.component';
-import { NavbarComponent } from './template/ui/navbar/navbar.component';
-
 
 @NgModule({
   declarations: [
@@ -21,12 +19,12 @@ import { NavbarComponent } from './template/ui/navbar/navbar.component';
     AlertComponent,
     HistoricComponent,
     ButtonComponent,
-    DropdownComponent,
-    NavbarComponent
+    DropdownComponent
   ],
+
   imports: [
     CommonModule,
-    IntranetRoutingModule
+    IntranetRoutingModule,
   ]
 })
 export class IntranetModule { }

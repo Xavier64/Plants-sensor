@@ -10,7 +10,6 @@ import { HistoricComponent } from './historic/historic.component';
 
 const routes: Routes = [
   {path:'', component:IntranetComponent, children:[
-    {path:'', component: HomeComponent},
     {path:'home', component: HomeComponent},
     {path:'humidity', component: HumidityComponent},
     {path:'plants', component: PLantsComponent},

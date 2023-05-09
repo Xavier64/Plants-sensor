@@ -1,9 +1,10 @@
-<nav class="bg-green-800 w-64 h-auto">
-    <ul>
+<nav class="flex flex-col gap-4 bg-green-900 w-44 h-full">
+    <img class="h-28 w-full flex items-center" src="assets/logo.svg" alt="logo">
+    <ul class="flex flex-col gap-2 p-2 ">
       <li *ngFor="let navbar of navbars">
-        <a [routerLink]="[navbar.url]" [title]="">
+        <a class="flex flex-row items-center gap-2 "[routerLink]="[navbar.url]">
           <img [src]="navbar.img" [alt]=""/>
-          <p class="no-underline" *ngIf="navbar.name && navbar.name.length > 0">{{ navbar.name }}</p>
+          <p class="text-white" *ngIf="navbar.name && navbar.name.length > 0">{{ navbar.name }}</p>
         </a>
       </li>
     </ul>
