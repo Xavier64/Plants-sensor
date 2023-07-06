@@ -39,10 +39,5 @@ export class NavbarComponent {
       name:"Historic",
       url:"/intranet/historic"
     },
-    {
-      img:"assets/log-out.svg",
-      name:"Log out",
-      url:"/extranet/connection"
-    },
   ]
 }
