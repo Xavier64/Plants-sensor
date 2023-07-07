@@ -20,13 +20,13 @@ export class SupabaseService {
     );
    }
 
-   async getCapteur() {
+   async getSensor() {
       return await this.supabase
-      .from('capteur')
+      .from('sensor')
       .select('*');
    }
 
-   async createCapteur ( 
+   async createSensor ( 
     newEntry: {
       macAddress: String;
       plant: String;
@@ -34,7 +34,7 @@ export class SupabaseService {
       alert: Number;
     }) {
       const { data, error } = await this.supabase
-      .from('capteur')
+      .from('sensor')
       .insert(newEntry)
       .select();
       if (error) {

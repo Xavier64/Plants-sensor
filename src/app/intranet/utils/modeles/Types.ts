@@ -21,7 +21,7 @@ export interface PlantI {
     date?: string
 }
 
-export interface CapteurI {
+export interface SensorI {
     id?: number,
     macAddress: string,
     humidity: number,
@@ -30,7 +30,7 @@ export interface CapteurI {
     alert: number
 }
 
-export interface HistoriqueI {
+export interface HistoricI {
     id: number,
     created_at: string,
     humidity: number,
