@@ -103,11 +103,60 @@
             ],
             "scripts": []
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Plant-Sensor:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "Plant-Sensor:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "ct": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Plant-Sensor:serve",
+            "watch": true,
+            "headless": false,
+            "testingType": "component"
+          },
+          "configurations": {
+            "development": {
+              "devServerTarget": "Plant-Sensor:serve:development"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "Plant-Sensor:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "Plant-Sensor:serve:production"
+            }
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "ca55aaa3-b678-4df9-a054-a5f21f2af7ae"
+    "analytics": "ca55aaa3-b678-4df9-a054-a5f21f2af7ae",
+    "schematicCollections": [
+      "@cypress/schematic",
+      "@schematics/angular"
+    ]
   }
 }
