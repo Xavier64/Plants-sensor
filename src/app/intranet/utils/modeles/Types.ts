@@ -9,7 +9,6 @@ export interface CardsI {
     img?:string;
     name?:string;
     description?:string;
-    humidity:number;
 }
 
 export interface PlantI {

@@ -10,6 +10,7 @@ import { HistoricComponent } from './historic/historic.component';
 import { ButtonComponent } from './template/ui/button/button.component';
 import { DropdownComponent } from './template/ui/dropdown/dropdown.component';
 import { CardsComponent } from './template/ui/cards/cards.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,15 @@ import { CardsComponent } from './template/ui/cards/cards.component';
     HistoricComponent,
     ButtonComponent,
     DropdownComponent,
-    CardsComponent
+    CardsComponent,
+    
   ],
 
   imports: [
     CommonModule,
     IntranetRoutingModule,
+    ReactiveFormsModule,
+
   ]
 })
 export class IntranetModule { }

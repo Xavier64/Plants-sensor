@@ -17,39 +17,15 @@ export class NavbarComponent {
       active: false,
     },
     {
-      img:"assets/plants.svg",
-      name:"Plants",
-      url:"/intranet/plants",
-      active: false,
-    },
-    {
       img:"assets/humidity.svg",
-      name:"Humidity",
+      name:"Gestion",
       url:"/intranet/humidity",
-      active: false,
-    },
-    {
-      img:"assets/sensor.svg",
-      name:"Sensor",
-      url:"/intranet/sensor",
-      active: false,
-    },
-    {
-      img:"assets/alert.svg",
-      name:"Alert",
-      url:"/intranet/alert",
       active: false,
     },
     {
       img:"assets/historic.svg",
       name:"Historic",
       url:"/intranet/historic",
-      active: false,
-    },
-    {
-      img:"assets/log-out.svg",
-      name:"Log out",
-      url:"/extranet/connection",
       active: false,
     },
   ]
