@@ -1,10 +1,8 @@
 name: 🚀 Run Unit Tests and SonarCloud Analysis
 
 on:
-  push:
-    branches:main
-  pull_request:
-    branches:main
+  push: main
+  pull_request: main
 
 jobs:
   build:
@@ -21,7 +19,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm run test:prod
+      - run: npm run test
 
       - name: SonarCloud Analysis
         run: |
